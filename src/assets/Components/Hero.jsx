@@ -64,13 +64,13 @@ export const Hero = () => {
           <div className="stat-card purple">
             <span>📦</span>
             <p>Total Products</p>
-            <h2>100+</h2>
+            <h2>30+</h2>
           </div>
 
           <div className="stat-card orange">
             <span>🍕</span>
             <p>Total Recipes</p>
-            <h2>50+</h2>
+            <h2>30+</h2>
           </div>
 
           <div className="stat-card green">

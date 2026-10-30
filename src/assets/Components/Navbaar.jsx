@@ -1,5 +1,11 @@
 import React from 'react'
 import "./Navbaar.css"
+
+
+
+import Recipes from './Recipes.jsx'
+import Products from './Products.jsx'
+import Carts from './Carts.jsx'
 export const Navbaar = () => {
   return (
      <nav className="navbar">
