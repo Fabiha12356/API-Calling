@@ -1,0 +1,284 @@
+
+.hero {
+  min-height: 650px;
+  background: #111827;
+  color: white;
+  padding: 80px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  overflow: hidden;
+}
+
+/* Left Content */
+
+.hero-content {
+  max-width: 550px;
+}
+
+.hero-tag {
+  display: inline-block;
+  color: #A78BFA;
+  background: rgba(118, 87, 246, 0.12);
+  border: 1px solid rgba(118, 87, 246, 0.3);
+  padding: 9px 15px;
+  border-radius: 30px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.hero-content h1 {
+  font-size: 55px;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.hero-content h1 span {
+  color: #987CFF;
+}
+
+.hero-content p {
+  color: #AEB8C8;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 14px 25px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary-btn {
+  background: #7657F6;
+  color: white;
+  border: 1px solid #7657F6;
+}
+
+.primary-btn:hover {
+  background: #6040df;
+  transform: translateY(-3px);
+}
+
+.secondary-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid #475569;
+}
+
+.secondary-btn:hover {
+  border-color: #987CFF;
+  color: #987CFF;
+}
+
+.hero-info {
+  display: flex;
+  gap: 25px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  color: #AEB8C8;
+  font-size: 13px;
+}
+
+
+/* Dashboard */
+
+.hero-dashboard {
+  width: 490px;
+  min-width: 0;
+  background: #1E293B;
+  border: 1px solid #334155;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.dashboard-header h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.dashboard-header p {
+  font-size: 12px;
+  color: #94A3B8;
+}
+
+.live-status {
+  color: #4ADE80;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+/* Stats Cards */
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  padding: 15px 10px;
+  border-radius: 12px;
+  background: #29364A;
+}
+
+.stat-card > span {
+  font-size: 23px;
+}
+
+.stat-card p {
+  color: #AEB8C8;
+  font-size: 11px;
+  margin: 12px 0 8px;
+}
+
+.stat-card h2 {
+  font-size: 22px;
+}
+
+.purple h2 {
+  color: #A78BFA;
+}
+
+.orange h2 {
+  color: #FB923C;
+}
+
+.green h2 {
+  color: #4ADE80;
+}
+
+
+/* Request Box */
+
+.request-box {
+  background: #172235;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.request-box h4 {
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.request-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid #334155;
+}
+
+.request-item:last-child {
+  border-bottom: none;
+}
+
+.request-icon {
+  width: 38px;
+  height: 38px;
+  background: #29364A;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.request-item div:nth-child(2) {
+  flex: 1;
+}
+
+.request-item h5 {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.request-item p {
+  font-size: 11px;
+  color: #94A3B8;
+}
+
+.success {
+  color: #4ADE80;
+  font-size: 11px;
+  font-weight: 700;
+  background: rgba(74, 222, 128, 0.1);
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-content {
+    max-width: 700px;
+  }
+
+  .hero-dashboard {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 55px 5%;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .hero-dashboard {
+    padding: 15px;
+  }
+
+  .dashboard-stats {
+    gap: 7px;
+  }
+
+  .stat-card {
+    padding: 12px 7px;
+  }
+
+  .stat-card p {
+    font-size: 9px;
+  }
+
+  .stat-card h2 {
+    font-size: 18px;
+  }
+
+  .hero-info {
+    gap: 12px;
+  }
+}
