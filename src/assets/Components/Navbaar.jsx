@@ -1,11 +1,9 @@
 import React from 'react'
 import "./Navbaar.css"
+import { Link } from 'react-router-dom'
 
 
 
-import Recipes from './Recipes.jsx'
-import Products from './Products.jsx'
-import Carts from './Carts.jsx'
 export const Navbaar = () => {
   return (
      <nav className="navbar">
@@ -15,10 +13,10 @@ export const Navbaar = () => {
       </a>
 
       <ul className="nav-links">
-        <li><a href="#" className="active">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Recipes</a></li>
-        <li><a href="#">Carts</a></li>
+         <li><Link to="/">Home</Link></li>
+  <li><Link to="/products">Products</Link></li>
+  <li><Link to="/recipes">Recipes</Link></li>
+  <li><Link to="/carts">Carts</Link></li>
       </ul>
 
       <button className="explore-btn">
