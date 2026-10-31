@@ -1,0 +1,140 @@
+.recipes-container {
+ background-color: #111827;
+  min-height: 100vh;
+  padding: 40px 6%;
+  color: white;
+}
+
+.recipes-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.recipes-heading h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+}
+
+.recipes-heading p {
+  color: #aaa0b8;
+  margin-top: 8px;
+}
+
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.recipe-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background:  #111827;
+  border: 1px solid #ffffff;
+  border-radius: 14px;
+  padding: 14px;
+  transition: 0.3s;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  border-color:   #404f70;
+  box-shadow: 0 5px 20px#404f70;
+}
+
+.recipe-image {
+  width: 145px;
+  min-width: 145px;
+  height: 155px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.recipe-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recipe-content {
+  flex: 1;
+}
+
+.recipe-category {
+  color:  #111827;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.recipe-content h3 {
+  font-size: 18px;
+  margin: 7px 0;
+  color: white;
+}
+
+.recipe-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: #c5b9d4;
+  font-size: 11px;
+  margin: 12px 0;
+}
+
+.recipe-description {
+  color: #aaa0b8;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.recipe-btn {
+  background:   #111827;
+  color: white;
+  border: 1px solid white !important;
+  border-radius: 7px;
+  padding: 8px 15px;
+  font-size: 12px;
+  margin-top: 7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.recipe-btn:hover {
+  background: #404f70;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .recipes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .recipes-container {
+    padding: 25px 4%;
+  }
+
+  .recipe-card {
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .recipe-image {
+    width: 105px;
+    min-width: 105px;
+    height: 125px;
+  }
+
+  .recipe-content h3 {
+    font-size: 15px;
+  }
+
+  .recipe-info {
+    gap: 7px;
+    font-size: 10px;
+  }
+}
