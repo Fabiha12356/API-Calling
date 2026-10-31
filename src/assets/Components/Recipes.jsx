@@ -1,9 +1,10 @@
 import React from 'react'
 
+
+import API from './API.jsx'
 export const Recipes = () => {
   return (
-    // <div>Recipes</div>
-    <div>hello</div>
+   <API  apiLink={'https://dummyjson.com/recipes'} apiName={'recipes'}/>
   )
 }
 export default Recipes
